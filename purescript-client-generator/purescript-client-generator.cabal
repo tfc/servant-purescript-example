@@ -1,0 +1,27 @@
+cabal-version:      3.4
+name:               purescript-client-generator
+version:            0.1.0.0
+license:            Apache-2.0
+license-file:       LICENSE
+author:             Jacek Galowicz
+maintainer:         jacek@galowicz.de
+category:           Web
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable purescript-client-generator
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    
+      , base
+      , example-api
+      , aeson
+      , purescript-bridge
+      , servant
+      , servant-foreign
+      , servant-purescript
+    hs-source-dirs:   app
+    default-language: Haskell2010

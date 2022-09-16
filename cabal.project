@@ -1,5 +1,6 @@
 packages:
   api
   backend
+  purescript-client-generator
 tests: True
 run-tests: True
