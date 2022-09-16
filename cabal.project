@@ -1,0 +1,5 @@
+packages:
+  api
+  backend
+tests: True
+run-tests: True
